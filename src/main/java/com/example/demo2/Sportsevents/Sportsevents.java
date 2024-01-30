@@ -3,71 +3,65 @@ package com.example.demo2.Sportsevents;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.lang.reflect.Array;
+
 public class Sportsevents {
-    @JsonProperty("key")
-    String key;
+    @JsonProperty("id")
+    String id;
 
-    @JsonProperty("group")
-    String group;
+    @JsonProperty("sport_key")
+    String sport;
 
-    @JsonProperty("title")
-    String title;
+    @JsonProperty("sport_title")
+    String sportTitle;
 
-    @JsonProperty("description")
-    String description;
+    @JsonProperty("commence_time")
+    String startTime;
 
-    @JsonProperty("active")
-    boolean active;
+    @JsonProperty("home_team")
+    String homeTeam;
 
-    @JsonProperty("has_outrights")
-    boolean hasOutrights;
-
-    // Add getters and setters if necessary
-
-    public String getKey() {
-        return key;
+    public String getId() {
+        return id;
     }
 
-    public void setKey(String key) {
-        this.key = key;
-    }
-    public String getGroup() {
-        return key;
+    public void setId(String id) {
+        this.id = id;
     }
 
-    public void getGroup(String key) {
-        this.group = key;
+    public String getSport() {
+        return sport;
     }
 
-    public String getTitle() {
-        return title;
+    public void setSport(String sport) {
+        this.sport = sport;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public String getSportTitle() {
+        return sportTitle;
     }
 
-    public String getDescription() {
-        return description;
+    public void setSportTitle(String sportTitle) {
+        this.sportTitle = sportTitle;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public String getStartTime() {
+        return startTime;
     }
 
-    public boolean isActive() {
-        return active;
+    public void setStartTime(String startTime) {
+        this.startTime = startTime;
     }
 
-    public void setActive(boolean active) {
-        this.active = active;
+    public String getHomeTeam() {
+        return homeTeam;
     }
 
-    public boolean isHasOutrights() {
-        return hasOutrights;
+    public void setHomeTeam(String homeTeam) {
+        this.homeTeam = homeTeam;
     }
 
-    public void setHasOutrights(boolean hasOutrights) {
-        this.hasOutrights = hasOutrights;
-    }
+
+// Add getters and setters if necessary
+
 }
